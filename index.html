@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manu‑Phact Pharmaceuticals | DuroFlo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+
+*{box-sizing:border-box}
+body{
+font-family:'Inter', Arial, sans-serif;
+margin:0;
+background:#f4f7fb;
+color:#2c3e50;
+}
+
+header{
+background:white;
+padding:15px 60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+height:55px;
+}
+
+nav a{
+text-decoration:none;
+margin-left:30px;
+color:#1f3f5b;
+font-weight:600;
+}
+
+.hero{
+background:linear-gradient(120deg,#1f3f5b,#2e6f9e);
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:750px;
+margin:auto;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:20px;
+color:#1f3f5b;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 4px 14px rgba(0,0,0,0.07);
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.highlight{
+border-left:5px solid #f58220;
+}
+
+ul li{
+margin-bottom:8px;
+}
+
+button{
+background:#f58220;
+color:white;
+border:none;
+padding:14px 24px;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#d96e13;
+}
+
+.accessibility{
+text-align:center;
+}
+
+footer{
+background:#1f3f5b;
+color:white;
+padding:40px 20px;
+text-align:center;
+margin-top:40px;
+}
+
+.small{
+font-size:14px;
+opacity:0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="manu-phact-logo.jpg" alt="Manu-Phact Pharmaceuticals Logo">
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#product">DuroFlo</a>
+<a href="#usage">Usage</a>
+<a href="#safety">Safety</a>
+<a href="#accessibility">Accessibility</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<h1>Advancing Pharmaceutical Innovation</h1>
+<p>Manu‑Phact Pharmaceuticals develops high‑quality medicines designed to improve patient outcomes through advanced formulation science and accessible healthcare solutions.</p>
+</section>
+
+<div class="container" id="about">
+
+<div class="card">
+<h2 class="section-title">About Manu‑Phact</h2>
+
+<p>Manu‑Phact Pharmaceuticals is a research‑driven pharmaceutical company dedicated to developing safe, effective and accessible medications. Our focus is on innovative drug delivery technologies that improve treatment adherence and patient safety.</p>
+
+<p>All Manu‑Phact medicines are manufactured according to internationally recognised pharmaceutical quality standards and undergo rigorous safety and efficacy evaluation.</p>
+
+</div>
+
+</div>
+
+<div class="container" id="product">
+
+<div class="card highlight">
+<h2 class="section-title">DuroFlo</h2>
+
+<p><strong>DuroFlo</strong> is a clinically formulated medication developed by Manu‑Phact Pharmaceuticals to support effective patient treatment and improved therapeutic outcomes.</p>
+
+<div class="grid">
+
+<div>
+<h3>Indications</h3>
+<ul>
+<li>Treatment of conditions as prescribed by a healthcare professional</li>
+<li>Designed for safe and effective therapeutic action</li>
+<li>Supports improved patient treatment outcomes</li>
+</ul>
+</div>
+
+<div>
+<h3>Formulation Advantages</h3>
+<ul>
+<li>High‑quality pharmaceutical ingredients</li>
+<li>Manufactured under GMP standards</li>
+<li>Optimised delivery for consistent dosing</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container" id="usage">
+
+<div class="card">
+<h2 class="section-title">How to Use DuroFlo</h2>
+
+<ol>
+<li>Use DuroFlo exactly as prescribed by your doctor or pharmacist.</li>
+<li>Carefully read the patient information leaflet before using the medication.</li>
+<li>Do not exceed the recommended dose.</li>
+<li>If symptoms persist consult your healthcare professional.</li>
+</ol>
+
+</div>
+
+</div>
+
+<div class="container" id="safety">
+
+<div class="card">
+<h2 class="section-title">Safety Information</h2>
+
+<ul>
+<li>Keep out of reach of children.</li>
+<li>Store according to the storage instructions on the packaging.</li>
+<li>Do not use the medication after the expiry date.</li>
+<li>Report any suspected adverse reactions to your healthcare provider.</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="container" id="accessibility">
+
+<div class="card accessibility">
+
+<h2 class="section-title">Accessible Medication Information</h2>
+
+<p>Manu‑Phact is committed to improving medication accessibility for visually impaired patients.</p>
+
+<p>Patients can scan the QR code on the medication leaflet or use the audio player below to hear spoken instructions for the safe use of DuroFlo.</p>
+
+<button onclick="document.getElementById('audio').play()">Play Audio Instructions</button>
+
+<br><br>
+
+<audio id="audio" controls>
+<source src="duroflo_instructions.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p class="small">This feature allows visually impaired patients to access medication information through spoken instructions.</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Manu‑Phact Pharmaceuticals</p>
+
+<p class="small">This website is created for educational and demonstration purposes.</p>
+
+</footer>
+
+</body>
+</html>
